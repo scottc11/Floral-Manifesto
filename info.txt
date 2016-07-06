@@ -1,0 +1,20 @@
+Colors
+Pink #fef1f1
+Yellow #fbfcca
+Purple #e2e2f4
+Text/headings #272727
+
+Fonts
+Eczar
+https://fonts.google.com/specimen/Eczar?category=Serif
+Headings/titles: Bold
+
+Open Sans
+https://fonts.google.com/specimen/Open+Sans?category=Serif&selection.family=Open+Sans&query=open+sans
+Paragraph text: Regular
+
+Web Address
+https://floralmanifesto.com/
+
+Instagram
+https://www.instagram.com/floral.manifesto
