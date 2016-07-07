@@ -163,6 +163,13 @@ body {
   margin-bottom: 10px;
 }
 
+.video-info-container div {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .video-info-container {
   background-color: #fef1f1;
   box-sizing: border-box;
@@ -172,6 +179,8 @@ body {
   padding: 10px;
   text-align: center;
   font-weight: bold;
+
+
 }
 
 .small-stitch {
