@@ -1,8 +1,6 @@
 "use strict";
 
-var jsonData;  // URL response
-var latestPost;
-var mediaData; // URL response
+var postContainerArray = ['#latest-post', '#post1', '#post2', '#post3', '#post4'];
 
 
 // when page is fully loaded, get wordpress posts
@@ -27,17 +25,19 @@ $(document).ready(function() {
   });
 
 
-  jsonData = $.getValues("http://frommusictocode.com/wp-json/wp/v2/posts/");  // get all posts
-  mediaData = $.getValues("http://frommusictocode.com/wp-json/wp/v2/media/");  // get all posts
+  var jsonData = $.getValues("http://frommusictocode.com/wp-json/wp/v2/posts/");  // get all posts
+  var mediaData = $.getValues("http://frommusictocode.com/wp-json/wp/v2/media/");  // get all posts
 
+  for (var i = 0; i < postContainerArray.length; i++) {
 
-  // OBTAIN LATEST POST DATA (text and image)
-  latestPost = jsonData[3]; // return the most recent post (always the first in the array of posts)
-  var latestPostMedia = getPostMedia(latestPost, mediaData); // Get post media
+    // OBTAIN POST DATA (text and image)
 
+    var postMedia = getPostMedia(jsonData[i], mediaData); // Get post media
+    var postContainerID = postContainerArray[i];
 
-  loadContent(latestPost, latestPostMedia);
-
+    // Load the content into HTML
+    loadContent(jsonData[i], postMedia, postContainerID);
+  }
 
 });
 
@@ -60,12 +60,14 @@ function getPostMedia(post, media) {
 
 
 // LOADING CONTENT INTO HTML ELEMENTS
-function loadContent(post, media) {
+function loadContent(post, media, containerID) {
   console.log(post);
   // assign variable to jquery request so you only have to do it once
-  var $postContainer = $('#latest-post');
+  var $postContainer = $(containerID);
 
+  // reformat the date string
   var dateString = dateConverter(post.date);
+
 
   // Fill in the html elements
 
@@ -79,9 +81,13 @@ function loadContent(post, media) {
     $postContainer.css('background-image', 'url("http://www.peterboltonphotoart.com/imgs/news/4852_9795921834e08b61b24f02.jpg")');
   }
 
-  $('.post-title').text(post.title.rendered);
-  $('.post-date').text(dateString);
+  $(containerID + '.post-title').text(post.title.rendered);
+  $(containerID + '.post-title').text(dateString);
 
+
+}
+
+function loadAllContent() {
 
 }
 
