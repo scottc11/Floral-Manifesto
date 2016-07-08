@@ -21,6 +21,14 @@ https://floralmanifesto.com/
 Instagram
 https://www.instagram.com/floral.manifesto
 
+Video
+https://www.youtube.com/watch?v=WAu-vTt7kw4
+
+Log on details for Wordpress blog
+username: celkin@me.com
+password: neasden123
+Site: floralmanifesto
+
 */
 
 
@@ -92,7 +100,10 @@ body {
 }
 
 
+
+
 /******** ARTCILES *********/
+/***************************/
 
 .articles-container {
   height: auto;
@@ -154,8 +165,12 @@ body {
   padding: 10px 10px 10px 10px;
 }
 
-/********** VIDEO **********/
 
+
+
+
+/********** VIDEO **********/
+/***************************/
 
 .player-container {
   height: 360px;  /*This will need to change for each screen*/
@@ -179,8 +194,6 @@ body {
   padding: 10px;
   text-align: center;
   font-weight: bold;
-
-
 }
 
 .small-stitch {
@@ -193,12 +206,22 @@ body {
   margin-bottom: 10px;
 }
 
+
+
+
+
 /****** INSTAGRAM *******/
+/***************************/
 
 .instagram-module {
   margin-bottom: 30px;
 }
+
+
+
+
 /****** FOOTER *******/
+/***************************/
 
 .footer-background {
   background-image: url('../img/bottom_banner.png');
