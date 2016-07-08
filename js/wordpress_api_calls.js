@@ -63,7 +63,7 @@ function getPostMedia(post, media) {
 function loadContent(post, media) {
   console.log(post);
   // assign variable to jquery request so you only have to do it once
-  var $postContainer = $('#lastest-post');
+  var $postContainer = $('#latest-post');
 
   var dateString = dateConverter(post.date);
 
@@ -71,9 +71,11 @@ function loadContent(post, media) {
 
   // error handle image to make sure there is one.
   try {
-    $postContainer.css('background-image', 'url(' + media.media_details.sizes.large.source_url + ')');
+    console.log("SUCCESS");
+    $postContainer.css('background-image', 'url(' + media.media_details.sizes.medium_large.source_url + ')');
   }
   catch(err) {
+    console.log("ERROR");
     $postContainer.css('background-image', 'url("http://www.peterboltonphotoart.com/imgs/news/4852_9795921834e08b61b24f02.jpg")');
   }
 
