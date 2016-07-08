@@ -1,0 +1,25 @@
+
+#latest-post {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.post-header-container {
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 10px 0 10px 0;
+}
+
+.post-header {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  margin: 0;
+  text-align: left;
+  padding: 10px;
+}

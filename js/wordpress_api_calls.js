@@ -63,7 +63,7 @@ function getPostMedia(post, media) {
 function loadContent(post, media) {
   console.log(post);
   // assign variable to jquery request so you only have to do it once
-  var $postContainer = $('.post-container');
+  var $postContainer = $('#lastest-post');
 
   var dateString = dateConverter(post.date);
 
@@ -77,8 +77,8 @@ function loadContent(post, media) {
     $postContainer.css('background-image', 'url("http://www.peterboltonphotoart.com/imgs/news/4852_9795921834e08b61b24f02.jpg")');
   }
 
-  $('#post-title').text(post.title.rendered);
-  $('#post-date').text(dateString);
+  $('.post-title').text(post.title.rendered);
+  $('.post-date').text(dateString);
 
 
 }
