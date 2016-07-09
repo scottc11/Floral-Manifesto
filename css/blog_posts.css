@@ -9,9 +9,16 @@
   text-align: left;
 }
 
-.post-header-container {
-  display: block;
-  background-color: rgba(0, 0, 0, 0);
+.post-image-shell {
+  background-color: transparent;
+  width: 100%;
+  height: 50%;
+}
+
+.latest-post-header-container {
+  /*position: relative;
+  top: 50%;
+  transform: translateY(-50%);*/
   margin: 10px 0 10px 0;
 }
 
@@ -21,5 +28,37 @@
   color: black;
   margin: 0;
   text-align: left;
-  padding: 10px;
+  padding: 0 10px 0 10px;
+}
+
+.sub-post {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sub-post-header-container {
+  background-color: #fef1f1;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+.sub-post-header-shell {
+  background-color: transparent;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sub-post-header {
+  text-decoration: underline;
+  margin: 0 0 10px 0;
+  padding: 0 10px 0 10px;
+}
+
+
+.sub-post-date-header {
+  margin: 10px 0 10px 0;
 }

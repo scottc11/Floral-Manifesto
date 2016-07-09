@@ -81,13 +81,8 @@ function loadContent(post, media, containerID) {
     $postContainer.css('background-image', 'url("http://www.peterboltonphotoart.com/imgs/news/4852_9795921834e08b61b24f02.jpg")');
   }
 
-  $(containerID + '.post-title').text(post.title.rendered);
-  $(containerID + '.post-title').text(dateString);
-
-
-}
-
-function loadAllContent() {
+  $(containerID + ' ' + '.post-title').text(post.title.rendered);
+  $(containerID + ' ' + '.post-date').text(dateString);
 
 }
 
