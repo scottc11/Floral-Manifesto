@@ -74,11 +74,11 @@ function loadContent(post, media, containerID) {
   // error handle image to make sure there is one.
   try {
     console.log("SUCCESS");
-    $postContainer.css('background-image', 'url(' + media.media_details.sizes.medium_large.source_url + ')');
+    $postContainer.children('.post-background').css('background-image', 'url(' + media.media_details.sizes.medium_large.source_url + ')');
   }
   catch(err) {
     console.log("ERROR");
-    $postContainer.css('background-image', 'url("http://www.peterboltonphotoart.com/imgs/news/4852_9795921834e08b61b24f02.jpg")');
+    $postContainer.children('.post-background').css('background-image', 'url("http://www.peterboltonphotoart.com/imgs/news/4852_9795921834e08b61b24f02.jpg")');
   }
 
   $(containerID + ' ' + '.post-title').text(post.title.rendered);
