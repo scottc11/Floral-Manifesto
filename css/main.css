@@ -196,10 +196,18 @@ h3 {
 /********** VIDEO **********/
 /***************************/
 
-.player-container {
+.video-container {
   height: 360px;  /*This will need to change for each screen*/
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .centering-div {
@@ -211,7 +219,7 @@ h3 {
 
 .video-info-container {
   background-color: #fef1f1;
-  box-sizing: border-box;
+  display: inline-block;
   height: 360px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -221,13 +229,21 @@ h3 {
 }
 
 .small-stitch {
+  padding: 20px;
+}
+
+.small-stitch img {
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-.video-info-container img {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.padder {
+  padding: 20px;
+}
+
+.padder img {
+  max-width: 100%;
 }
 
 
@@ -265,9 +281,14 @@ h3 {
 }
 
 .footer-banner {
+  min-height: 109px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+#star {
+  height: 100%;
 }
 
 .footer-slogan {
@@ -276,6 +297,14 @@ h3 {
   padding-bottom: 10px;
 }
 
+.footer-slogan img {
+  max-width: 100%;
+}
+
 .footer-disclaimer {
   padding: 30px 0 100px 0;
+}
+
+.footer-disclaimer img {
+  max-width: 100%;
 }
