@@ -71,18 +71,27 @@ h3 {
 }
 
 .logo-container {
-  margin: 10px 0 10px 0;
   text-align: center;
 }
 
+.logo-container img {
+  width: 100%;
+  height: auto;
+  padding: 10px 0 10px 0;
+}
+
+.slogan-container {
+  margin-bottom: 20px;
+}
+
 .slogan-container img {
-  width: 400px;
+  width: 100%;
   height: auto;
   padding: 10px 0 10px 0;
 }
 
 .stitch-divider-header img {
-  width: 50%;
+  width: 100%;
   height: auto;
   padding: 10px 0 10px 0;
 }
