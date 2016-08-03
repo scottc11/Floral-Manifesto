@@ -22,8 +22,9 @@
   transform: scale(1.2);
 }
 
+/*if you want to add a border to article on hover*/
 .article:hover .article-preview-container {
-  border: 1px solid black;
+
 }
 
 
