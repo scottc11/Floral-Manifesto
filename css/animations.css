@@ -22,7 +22,7 @@
   transform: scale(1.2);
 }
 
-.article:hover {
+.article:hover .article-preview-container {
   border: 1px solid black;
 }
 

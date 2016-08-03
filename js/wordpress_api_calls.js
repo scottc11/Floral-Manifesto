@@ -47,10 +47,8 @@ $(document).ready(function() {
 // an array of media from every blog post and pairing it with the post
 // ID of given blog post.
 function getPostMedia(post, media) {
-  console.log(media);
   for (var i = 0; i < media.length; i++) {
     if (media[i].post == post.id) {
-      console.log(media[i]);
       return media[i];
     }
   }
@@ -61,7 +59,6 @@ function getPostMedia(post, media) {
 
 // LOADING CONTENT INTO HTML ELEMENTS
 function loadContent(post, media, containerID) {
-  console.log(post);
   // assign variable to jquery request so you only have to do it once
   var $postContainer = $(containerID);
 
